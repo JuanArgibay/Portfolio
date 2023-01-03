@@ -9,6 +9,7 @@ import { GitLogo } from '../components/Logos/GitLogo/GitLogo';
 import { PostmanLogo } from '../components/Logos/PostmanLogo/PostmanLogo';
 import { useContext } from 'react';
 import { DarkContext } from '../context/darkMode';
+import { MySqlLogoDark } from '../components/Logos/MySqlLogo/MySqlLogoDark';
 
 export const Skills = () => {
 
@@ -56,7 +57,7 @@ export const Skills = () => {
               </li>
               <li>
                 <article className='skillCard'>
-                <MySqlLogo/>
+                {darkMode === 'light'? <MySqlLogo/> : <MySqlLogoDark/>}
                 <p>MYSQL</p>
                 </article>
               </li>

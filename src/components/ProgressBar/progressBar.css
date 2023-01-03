@@ -8,10 +8,17 @@
     z-index: 1;
 }
 
-.progress_bar {
+#progress_bar {
     position: absolute;
     width: 33%;
     height: 5px;
-    background-color: #0bd0bd;
     z-index: 2;
+}
+
+.progress_wrapper .light {
+    background-color: #0bd0bd;
+}
+
+.progress_wrapper .dark {
+    background-color: #ff770f;
 }

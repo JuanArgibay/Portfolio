@@ -1,22 +1,26 @@
+import { useContext } from "react"
+import { DarkContext } from "../../context/darkMode"
 import { DarkMode } from "../DarkMode/DarkMode"
 import { ProgressBar } from "../ProgressBar/ProgressBar"
 
 export const Header = () => {
+
+  const { darkMode } = useContext(DarkContext)
   
     const logoText = '< J.A />'
   return (
-    <header >
+    <header className={darkMode}>
         <p className='logoText'>{logoText}</p>
       <menu>
         <nav className='menuNav'>
           <li>
-            <a href='#about'>Sobre mi</a>
+            <a className={darkMode} href='#about'>Sobre mi</a>
           </li>
           <li>
-            <a href='#skills'>Habilidades</a>
+            <a className={darkMode} href='#skills'>Habilidades</a>
           </li>
           <li>
-            <a href='#projects'>Proyectos</a>
+            <a className={darkMode} href='#projects'>Proyectos</a>
           </li>
         </nav>
       </menu>

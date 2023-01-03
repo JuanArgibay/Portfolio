@@ -41,6 +41,8 @@ main,
   --colorDark: #313131;
   --colorBlue: #66f2d5;
   --colorPurple: #833ab4;
+  --colorOrange: #ff770f;
+  --coloryellow: #fff95b;
   --maxWidth: 1000px;
   font-family: 'Space Mono', monospace;
   display: flex;
@@ -50,7 +52,6 @@ main,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: var(--colorDark);
 }
 
 .about-container,
@@ -72,15 +73,17 @@ header {
 }
 
 main {
-  width: 98vw;
+  width: 100%;
 }
 
 .light {
   background-color: white;
+  color: var(--colorDark);
 }
 
 .dark {
-  background-color: var(--colorDark) !important;
+  background-color: var(--colorDark);
+  color: white;
 }
 
 ul {
@@ -89,7 +92,6 @@ ul {
 
 a {
   text-decoration: none;
-  color: black;
 }
 
 /* Menu Nav*/
@@ -149,6 +151,10 @@ header .logoText {
   margin-top: 1rem;
 }
 
+#abour .descriptionLinks-container {
+  position: absolute;
+}
+
 #about ul {
   display: flex;
   margin-left: 1rem;
@@ -169,17 +175,19 @@ header .logoText {
   font-size: 1rem;
 }
 
-#about .fill {
+#about .descriptionLinks a {
   padding: 2.25px 10px 2.25px;
   outline: 0;
   border: 1px solid var(--colorDark);
   cursor: pointer;
   position: relative;
+  background-color: transparent;
   margin: 1rem;
+  z-index: 0;
+  color: var(--colorDark);
 }
 
-#about .fill::after {
-  background-color: var(--colorBlue);
+#about .descriptionLinks a::after {
   content: "";
   width: 100%;
   z-index: -1;
@@ -190,24 +198,47 @@ header .logoText {
   transition: 0.2s;
 }
 
-#about .fill:hover:after {
+#about .descriptionLinks .light::after {
+  background-color: var(--colorBlue);
+}
+
+#about .descriptionLinks .dark {
+  border: 1px solid white;
+}
+
+#about .descriptionLinks .dark::after {
+  background-color: #ffcb5b;
+}
+
+
+#about .descriptionLinks a:hover:after {
   top: 0px;
   left: 0px;
 }
 
-#about .iam {
+#about #iam {
   --bg-size: 400%;
   font-size: 4rem;
-  background: linear-gradient(90deg,
-      var(--colorPurple),
-      var(--colorBlue),
-      var(--colorPurple)) 0 0 / var(--bg-size) 100%;
   color: transparent;
   background-clip: text;
 }
 
+#about .nameContact .light {
+  background: linear-gradient(90deg,
+      var(--colorPurple),
+      var(--colorBlue),
+      var(--colorPurple)) 0 0 / var(--bg-size) 100%;
+}
+
+#about .nameContact .dark {
+  background: linear-gradient(90deg,
+      var(--colorOrange),
+      var(--coloryellow),
+      var(--colorOrange)) 0 0 / var(--bg-size) 100%;
+}
+
 @media (prefers-reduced-motion: no-preference) {
-  .iam {
+  #iam {
     animation: move-bg 15s linear infinite;
   }
 
@@ -391,6 +422,7 @@ header .logoText {
 
 #projects .projectSkills {
   margin-bottom: 0.8rem;
+  color: var(--colorDark) !important;
 }
 
 #projects .projectSkills .html {
@@ -432,8 +464,12 @@ header .logoText {
   gap: 1rem;
 }
 
-#projects .projectLinksContainer a {
+#projects .projectLinksContainer .light {
   color: var(--colorDark);
+}
+
+#projects .projectLinksContainer .dark {
+  color: white;
 }
 
 #projects .projectDescription {
