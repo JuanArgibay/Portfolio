@@ -1,3 +1,3 @@
 # PORTFOLIO PERSONAL
 
-## Desarrollado en ReactJs:
+## Desarrollado en ReactJs
