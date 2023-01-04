@@ -18,7 +18,7 @@ export const DarkMode = () => {
     <button 
       className='darkMode'
       onClick={handleClick}
-      title='Dark Mode'
+      title='Tema oscuro'
       >
         {mode === false ? <ToggleIconDarkFalse/> : <ToggleiconDarkTrue/> }
     </button>

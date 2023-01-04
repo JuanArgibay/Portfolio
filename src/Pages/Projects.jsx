@@ -28,8 +28,8 @@ export const Projects = () => {
                   </ul>
                   <h3>Descubre la pareja</h3>
                     <div className='projectLinksContainer'>
-                      <a className={darkMode} href='https://github.com/JuanArgibay/Encuentra-la-pareja'>Github</a>
-                      <a className={darkMode} href='https://encuentralapareja.vercel.app/'>Website</a>
+                      <a className={darkMode} target="_blank" rel='noreferrer' href='https://github.com/JuanArgibay/Encuentra-la-pareja'>Github</a>
+                      <a className={darkMode} target="_blank" rel='noreferrer' href='https://encuentralapareja.vercel.app/'>Website</a>
                     </div>
                   <details>
                     <summary></summary>
@@ -54,8 +54,8 @@ export const Projects = () => {
                   <h3>Instagram Pro</h3>
                   <div >
                     <div className='projectLinksContainer'>
-                      <a className={darkMode} href='https://github.com/JuanArgibay/Instagram-Pro-FrontEnd'>Github</a>
-                      <a className={darkMode} href='https://www.youtube.com/watch?v=cF04GUGUXTo&t=1s'>Website</a>
+                      <a className={darkMode} target="_blank" rel='noreferrer' href='https://github.com/JuanArgibay/Instagram-Pro-FrontEnd'>Github</a>
+                      <a className={darkMode} target="_blank" rel='noreferrer' href='https://www.youtube.com/watch?v=cF04GUGUXTo&t=1s'>Website</a>
                     </div>
                     <details>
                       <summary></summary>
@@ -81,8 +81,8 @@ export const Projects = () => {
                   <h3>Poke App</h3>
                   <div>
                     <div className='projectLinksContainer'>
-                      <a className={darkMode} href='https://github.com/JuanArgibay/PokeApp'>Github</a>
-                      <a className={darkMode} href='https://poke-app-cyny.vercel.app/'>Website</a>
+                      <a className={darkMode} target="_blank" rel='noreferrer' href='https://github.com/JuanArgibay/PokeApp'>Github</a>
+                      <a className={darkMode} target="_blank" rel='noreferrer' href='https://poke-app-cyny.vercel.app/'>Website</a>
                     </div>
                     <details>
                     <summary></summary>

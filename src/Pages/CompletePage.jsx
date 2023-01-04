@@ -15,6 +15,9 @@ export const CompletePage = () => {
             <div id="app-container" className={darkMode}>
                 <Header/>
                 <main>
+                    <div className="decorationBar-container">
+                        <div className={darkMode} id="decorationBar"/>
+                    </div>
                     <About/>
                     <Skills/>
                     <Projects/>

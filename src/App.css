@@ -44,6 +44,7 @@ main,
   --colorOrange: #ff770f;
   --coloryellow: #fff95b;
   --maxWidth: 1000px;
+  --maxWidth750: 475px;
   font-family: 'Space Mono', monospace;
   display: flex;
   align-items: center;
@@ -70,6 +71,10 @@ header {
   justify-content: space-between;
   z-index: 1;
   padding-bottom: 1rem;
+}
+
+header .decorationBar {
+  display: none;
 }
 
 main {
@@ -107,11 +112,6 @@ a {
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 300;
-}
-
-header>div {
-  display: flex;
-  gap: 1rem;
 }
 
 header .logoText {
@@ -334,6 +334,7 @@ header .logoText {
   padding: 1rem;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   gap: 2rem;
   max-width: var(--maxWidth);
   width: 100%;
@@ -341,33 +342,6 @@ header .logoText {
 
 #projects .projects-container .projectCard {
   align-self: center;
-}
-
-#projects .slide {
-  display: flex;
-}
-
-#projects .carousel {
-  max-width: 500px;
-}
-
-#projects .control-dots {
-  padding: 0 !important;
-}
-
-#projects .control-next.control-arrow:before {
-  border-left: 8px solid var(--colorDark);
-}
-
-#projects .control-prev.control-arrow:before {
-  border-right: 8px solid var(--colorDark);
-}
-
-#projects .carouselButton {
-  background-color: transparent;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
 }
 
 #projects .projectSkills {
@@ -478,4 +452,220 @@ header .logoText {
 
 #projects summary {
   text-align: right;
+}
+
+@media (max-width: 1050px) {
+  header {
+    padding: 0 2rem 0 2rem;
+    padding-bottom: 1rem;
+  }
+
+  header .logoText {
+    font-size: 1.5rem;
+    padding-top: 3.5rem;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  #about .description {
+    max-width: var(--maxWidth750);
+    margin: 0;
+  }
+
+  #about .imageAbout {
+    display: none;
+  }
+
+  #skills .skillsPageContainer {
+    height: 100%;
+    justify-content: center;
+  }
+
+  #skills .skillsPageContainer p {
+    max-width: var(--maxWidth750);
+    text-align: center;
+  }
+
+  #skills .skillsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #skills .imageSkills {
+    display: none;
+  }
+
+  #skills ul {
+    gap: 3rem;
+  }
+
+  #projects .projectsPageContainer {
+    height: 100%;
+    max-width: var(--maxWidth750);
+  }
+
+  section,
+  body,
+  html,
+  #root,
+  main,
+  .App,
+  #app-container,
+  #test {
+    block-size: auto;
+  }
+
+  #about {
+    height: 100vh;
+  }
+
+  #skills {
+    height: 100vh;
+  }
+
+  #projects {
+    padding-top: 200px;
+  }
+
+  #progress_bar {
+    display: none;
+  }
+
+  .decorationBar-container {
+    display: block;
+    position: sticky;
+    top: 80px;
+    height: 2rem;
+    width: 100%;
+  }
+
+  #decorationBar {
+    width: 100%;
+    height: 100%;
+  }
+
+  .decorationBar-container .dark {
+    border-bottom: 5px solid var(--colorOrange);
+  }
+
+  .decorationBar-container .light {
+    border-bottom: 5px solid #0bd0bd;
+  }
+}
+
+@media (max-width: 750px) {
+  #dropbtn {
+    background-color: transparent;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 1.5rem;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(165, 163, 163);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content .light:hover {
+    background-color: #f1f1f1
+  }
+
+  .dropdown-content .dark:hover {
+    background-color: #525252
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .light {
+    background-color: var(--colorBlue);
+    opacity: 0.7;
+  }
+
+  .dropdown:hover .dark {
+    background-color: var(--colorOrange);
+    opacity: 0.7;
+  }
+
+  header .logoText {
+    padding-top: 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  header .darkMode {
+    margin-top: 1.5rem;
+  }
+
+  .decorationBar-container {
+    top: 50px;
+  }
+
+  #about h1 {
+    font-size: 1.5rem;
+    padding-top: 3rem;
+  }
+
+  #about #iam {
+    font-size: 2.7rem;
+  }
+
+  #about p {
+    font-size: 1rem;
+    padding: 0 2rem 0.5rem 2rem;
+  }
+
+  #skills h2 {
+    font-size: 1.8rem;
+  }
+
+  #skills {
+    padding: 0 2rem 0 2rem;
+  }
+
+  #skills .skillsPageContainer ul {
+    gap: 1.5rem;
+  }
+
+  #skills .skillsContainer {
+    margin-top: 1.9rem;
+  }
+
+  #projects {
+    padding-top: 135px;
+  }
+
+  #projects h2 {
+    font-size: 1.8rem;
+  }
+
+  #projects .card-content h3 {
+    font-size: 1.1rem;
+  }
+
+  #projects .projectLinksContainer a {
+    font-size: 0.9rem;
+  }
 }
