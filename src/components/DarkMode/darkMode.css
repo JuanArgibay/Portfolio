@@ -2,5 +2,6 @@
     background-color: transparent;
     border: none;
     width: 30px;
-    padding-top: 3.3rem;
+    margin-top: 3.3rem;
+    cursor: pointer;
 }
