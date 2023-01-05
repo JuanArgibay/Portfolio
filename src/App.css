@@ -335,19 +335,20 @@ header .logoText {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 2rem;
   max-width: var(--maxWidth);
   width: 100%;
 }
 
 #projects .projects-container .projectCard {
   align-self: center;
+  height: 400px;
 }
 
 #projects .projectSkills {
   display: flex;
   gap: 1rem;
 }
+
 
 #projects .card-content,
 .card-reveal {
@@ -364,8 +365,9 @@ header .logoText {
 }
 
 #projects details>summary {
-  list-style-type: '˅';
-  font-size: 2rem;
+  height: 0.1rem;
+  list-style-type: '<';
+  font-size: 1.5rem;
 }
 
 #projects details[open]>summary {
@@ -668,4 +670,6 @@ header .logoText {
   #projects .projectLinksContainer a {
     font-size: 0.9rem;
   }
+
+
 }
