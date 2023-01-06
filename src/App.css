@@ -371,7 +371,7 @@ header .logoText {
 }
 
 #projects details[open]>summary {
-  list-style-type: '˄';
+  list-style-type: '^';
 }
 
 #projects h2 {
