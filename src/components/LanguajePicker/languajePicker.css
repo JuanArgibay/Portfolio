@@ -1,0 +1,46 @@
+.languaje {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+#languaje-container {
+    border: 1px solid var(--colorBlue);
+    position: relative;
+    border-radius: 25px;
+    height: 28px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#languaje-container .dark .selected {
+    background-color: var(--colorOrange) !important;
+}
+
+#languaje-container .light .selected {
+    background-color: var(--colorBlue) !important;
+}
+
+#languaje-container #Es {
+    border-radius: 25px 0px 0px 25px;
+    width: 28.5px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#languaje-container #Eng {
+    border-radius: 0px 25px 25px 0px;
+    width: 28.5px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.languaje .light,
+.languaje .dark {
+    background-color: transparent !important;
+}

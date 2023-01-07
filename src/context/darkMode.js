@@ -6,11 +6,14 @@ export const DarkContext = createContext();
 export const DarkProviderComponent = ({children}) => {
 
     const [darkMode, setDarkMode ] = useState('light');
+    const [lang, setLang] = useState('es');
 
     return <DarkContext.Provider
         value={{
             darkMode,
-            setDarkMode
+            setDarkMode,
+            lang,
+            setLang
         }}>
         {children}
     </DarkContext.Provider>;
