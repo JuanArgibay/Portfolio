@@ -29,7 +29,7 @@ export const Projects = () => {
               <h3>{lang === 'Es' ?
                 'Descubre la pareja'
                 :
-                'Find the twice'}</h3>
+                'Find the pair'}</h3>
               <div className='projectLinksContainer'>
                 <a className={darkMode} target="_blank" rel='noreferrer' href='https://github.com/JuanArgibay/Encuentra-la-pareja'>Github</a>
                 <a className={darkMode} target="_blank" rel='noreferrer' href='https://encuentralapareja.vercel.app/'>Website</a>
@@ -40,7 +40,7 @@ export const Projects = () => {
                   {lang === 'Es' ?
                     'Juego de memoria para los más pequeños de la casa. Agiliza tu mente con esta app y encuentra las ocho parejas.'
                     :
-                    'Memory game for the home´s child’s. Sharpen up your mind with this app and find the eight pairs.'}
+                    'Memory game for toddlers. Sharpen up their mind with this app by finding the eight pairs.'}
                 </p>
               </details>
             </div>
@@ -70,7 +70,7 @@ export const Projects = () => {
                   <p className='projectDescription'>{lang === 'Es' ?
                     'Aplicación inspirada en Instagram. Comparte tus momentos, sube, comenta y dale like a cuantas fotos quieras.'
                     :
-                    'App be inspired by Instagram. Share your moments, upload, comment and give likes as many photos you want.'}
+                    'App inspired by Instagram. Share your moments with everyone, comment and interact with people and pictures.'}
                   </p>
                 </details>
               </div>
@@ -101,7 +101,7 @@ export const Projects = () => {
                   <p className='projectDescription'>{lang === 'Es' ?
                     'App para todos los amantes de Pokémon, podrás encontrarlos a todos junto con sus características y habilidades de una forma muy visual.'
                     :
-                    'App for all Pokemon lovers, you will can find all of them with them skills in a very visual interface.'}
+                    'App for Pokemon lovers, you can find a description of all pokemon with their skills in a very intuitive interface..'}
                   </p>
                 </details>
               </div>

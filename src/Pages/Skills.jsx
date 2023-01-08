@@ -22,7 +22,7 @@ export const Skills = () => {
         <p>{lang === 'Es' ?
           'Estas son las herramientas que utilizo para facilitar mi trabajo.'
           :
-          'These are the tools that I use to make easier my work.'}</p>
+          'These are the tools I have experience with.'}</p>
         <div className='skillsContainer'>
           <div className='imageSkillsContainer'>
             <ImageSkills />

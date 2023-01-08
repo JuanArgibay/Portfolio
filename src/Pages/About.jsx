@@ -30,7 +30,7 @@ export const About = () => {
           <p>{lang === 'Es' ?
             'Soy una persona curiosa, activa y con ganas de aprender. Apasionado de las nuevas tecnologías, herramientas y formas para hacer mejor las cosas. Disfruto trabajando en equipo intercambiando ideas y resolviendo problemas. '
             :
-            'I am a curios person, active and eager to learn. Passionate about new technologies, tools and forms to do things better. I enjoy working in team exchanging ideas and resolving problems.'}</p>
+            'I am a curious person, active and eager to learn. I am passionate about new technologies, tools and ways of doing things better. I enjoy working in a team, sharing ideas and working collaboratively is the most efficient way to solve problems.'}</p>
           <div className='descriptionLinks-container'>
             <div className='descriptionLinks'>
               <a href={CV} title='Descargar CV' className={darkMode} download>{lang === 'Es' ? 'Descargar CV' : 'Download CV'}</a>
