@@ -101,7 +101,7 @@ export const Projects = () => {
                   <p className='projectDescription'>{lang === 'Es' ?
                     'App para todos los amantes de Pokémon, podrás encontrarlos a todos junto con sus características y habilidades de una forma muy visual.'
                     :
-                    'App for Pokemon lovers, you can find a description of all pokemon with their skills in a very intuitive interface..'}
+                    'App for Pokemon lovers, you can find a description of all pokemon with their skills in a very intuitive interface.'}
                   </p>
                 </details>
               </div>
