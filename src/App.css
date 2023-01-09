@@ -417,6 +417,7 @@ a {
 
 #projects summary {
   text-align: right;
+  cursor: pointer;
 }
 
 @media (max-width: 1050px) {

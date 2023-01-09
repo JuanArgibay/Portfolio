@@ -6,21 +6,21 @@ import { DarkContext } from '../../context/darkMode';
 
 export const DarkMode = () => {
 
-  const {darkMode, setDarkMode} = useContext(DarkContext);
+  const { darkMode, setDarkMode, lang } = useContext(DarkContext);
 
   const [mode, setMode] = useState(false);
   const handleClick = () => {
-    darkMode === 'light'? setDarkMode('dark') : setDarkMode('light');
+    darkMode === 'light' ? setDarkMode('dark') : setDarkMode('light');
     setMode(!mode);
   }
 
   return (
-    <button 
+    <button
       className='darkMode'
       onClick={handleClick}
-      title='Tema oscuro'
-      >
-        {mode === false ? <ToggleIconDarkFalse/> : <ToggleiconDarkTrue/> }
+      title={lang === 'Es' ? 'Tema oscuro' : 'Dark theme'}
+    >
+      {mode === false ? <ToggleIconDarkFalse /> : <ToggleiconDarkTrue />}
     </button>
   )
 }

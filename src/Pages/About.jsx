@@ -19,10 +19,10 @@ export const About = () => {
           <h1>{lang === 'Es' ? '¡Hola! Soy,' : 'Hello! I am,'} <br /> <span id='iam' className={darkMode}>Juan Argibay</span> <br /> Web Developer.</h1>
           <ul>
             <li>
-              <a title='Perfil de Linkedin' target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/juan-m-argibay-gonzalez/'>{darkMode === 'light' ? <LinkedinLogo /> : <LinkedinLogoDark />}</a>
+              <a title='Linkedin' target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/juan-m-argibay-gonzalez/'>{darkMode === 'light' ? <LinkedinLogo /> : <LinkedinLogoDark />}</a>
             </li>
             <li>
-              <a title='Repositorio de GitHub' target="_blank" rel='noreferrer' href='https://github.com/JuanArgibay'>{darkMode === 'light' ? <GitHubLogo /> : <GitHubLogoDark />}</a>
+              <a title='GitHub' target="_blank" rel='noreferrer' href='https://github.com/JuanArgibay'>{darkMode === 'light' ? <GitHubLogo /> : <GitHubLogoDark />}</a>
             </li>
           </ul>
         </div>
@@ -33,9 +33,9 @@ export const About = () => {
             'I am a curious person, active and eager to learn. I am passionate about new technologies, tools and ways of doing things better. I enjoy working in a team, sharing ideas and working collaboratively is the most efficient way to solve problems.'}</p>
           <div className='descriptionLinks-container'>
             <div className='descriptionLinks'>
-              <a href={CV} title='Descargar CV' className={darkMode} download>{lang === 'Es' ? 'Descargar CV' : 'Download CV'}</a>
+              <a href={CV} title={lang === 'Es' ? 'Descargar CV' : 'Download CV'} className={darkMode} download>{lang === 'Es' ? 'Descargar CV' : 'Download CV'}</a>
               -
-              <a type='email' title='Contáctame' href='mailto:jmargibayg@gmail.com' className={darkMode}>{lang === 'Es' ? 'Contáctame' : 'Contact me'}</a>
+              <a type='email' title={lang === 'Es' ? 'Contáctame' : 'Contact me'} href='mailto:jmargibayg@gmail.com' className={darkMode}>{lang === 'Es' ? 'Contáctame' : 'Contact me'}</a>
             </div>
           </div>
         </div>

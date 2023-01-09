@@ -35,7 +35,7 @@ export const Projects = () => {
                 <a className={darkMode} target="_blank" rel='noreferrer' href='https://encuentralapareja.vercel.app/'>Website</a>
               </div>
               <details>
-                <summary></summary>
+                <summary title={lang === 'Es' ? 'Descripción' : 'Description'}></summary>
                 <p className='projectDescription'>
                   {lang === 'Es' ?
                     'Juego de memoria para los más pequeños de la casa. Agiliza tu mente con esta app y encuentra las ocho parejas.'
@@ -66,7 +66,7 @@ export const Projects = () => {
                   <a className={darkMode} target="_blank" rel='noreferrer' href='https://www.youtube.com/watch?v=cF04GUGUXTo&t=1s'>Website</a>
                 </div>
                 <details>
-                  <summary></summary>
+                  <summary title={lang === 'Es' ? 'Descripción' : 'Description'}></summary>
                   <p className='projectDescription'>{lang === 'Es' ?
                     'Aplicación inspirada en Instagram. Comparte tus momentos, sube, comenta y dale like a cuantas fotos quieras.'
                     :
@@ -97,7 +97,7 @@ export const Projects = () => {
                   <a className={darkMode} target="_blank" rel='noreferrer' href='https://poke-app-cyny.vercel.app/'>Website</a>
                 </div>
                 <details>
-                  <summary></summary>
+                  <summary title={lang === 'Es' ? 'Descripción' : 'Description'}></summary>
                   <p className='projectDescription'>{lang === 'Es' ?
                     'App para todos los amantes de Pokémon, podrás encontrarlos a todos junto con sus características y habilidades de una forma muy visual.'
                     :
