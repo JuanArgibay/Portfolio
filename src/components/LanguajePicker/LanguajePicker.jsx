@@ -12,7 +12,6 @@ export const LanguajePicker = () => {
     const handlerClickToggle = (e) => {
         const selected = e.target;
         if (selected === es.current) {
-            console.log(es.current);
             es.current.className = 'selected';
             eng.current.className = 'unSelected';
         } else {
