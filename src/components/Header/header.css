@@ -1,41 +1,41 @@
 header {
-    position: fixed;
-    max-width: var(--maxWidth);
-    width: 100vw;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    z-index: 1;
-    padding-bottom: 1rem;
+  position: fixed;
+  max-width: var(--maxWidth);
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  padding-bottom: 1rem;
 }
 
 header .decorationBar {
-    display: none;
+  display: none;
 }
 
-.menuNav {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-    padding-top: 4rem;
+.menuNav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  padding-top: 4rem;
 }
 
 .menuNav a {
-    font-family: 'Kanit', sans-serif;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 300;
+  font-family: "Kanit", sans-serif;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 300;
 }
 
 header .logoText {
-    font-family: logoFont;
-    font-weight: bolder;
-    font-size: 2rem;
-    padding-top: 3rem;
+  font-family: logoFont;
+  font-weight: bolder;
+  font-size: 2rem;
+  padding-top: 3rem;
 }
 
 header .switches {
-    display: flex;
-    align-items: flex-end;
-    gap: 2rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
 }
