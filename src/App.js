@@ -1,13 +1,12 @@
-import './App.css';
-import {  DarkProviderComponent } from './context/darkMode';
-import { CompletePage } from './Pages/CompletePage';
+import "./App.css";
+import { DarkProviderComponent } from "./context/darkMode";
+import { CompletePage } from "./Pages/CompletePage";
 
 function App() {
-
   return (
     <div className="App">
       <DarkProviderComponent>
-        <CompletePage/>
+        <CompletePage />
       </DarkProviderComponent>
     </div>
   );
